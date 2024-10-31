@@ -1,0 +1,272 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import "sass-flexbox/main";
+//@import "bootstrap-btns";
+
+
+.text-center{
+  text-align: center;
+}
+
+#wpcontent{
+  padding-left: 0px;
+}
+
+.p0{
+  padding: 0px;
+}
+
+.white-bg{
+  background: #fff;
+}
+
+
+$rc-primary-color: #E37837;
+$blue: #4F94E0;
+
+#rc-admin-container{
+
+  #modules-table{
+    tr{
+      border-bottom: 1px solid #E8E8E8;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  *{
+    color: #5E5E5E;
+  }
+
+  font-size: 16px;
+
+  p,input,a,div,span{
+    margin-top: 0px;
+    font-size: 16px;
+  }
+
+  a{
+    color: #4F94E0;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+
+    span{
+      color: #4F94E0;
+      text-decoration: none !important;
+    }
+  }
+
+  #rc-header{
+    clear:both;
+    background: #fff;
+    padding: 15px 20px;
+  }
+
+  #rc-nav{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  input{
+    padding: 2px 15px;
+    border-width: 1px;
+
+  }
+
+  .btn{
+    cursor: pointer;
+    background: $rc-primary-color;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    border-width: 1px;
+
+    &.btn-outline{
+      background: #fff;
+      color: $rc-primary-color;
+      border-color: $rc-primary-color;
+      box-shadow: none !important;
+      border-style: solid !important;
+      border-width: 1px;
+    }
+  }
+
+  .box{
+    display: block;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #ECECEC;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  h1{
+    margin-top: 10px;
+    font-size:1.8em;
+  }
+
+  .nav-tab-wrapper{
+    a{
+      -webkit-border-top-left-radius: 6px;
+      -webkit-border-top-right-radius: 6px;
+      -moz-border-radius-topleft: 6px;
+      -moz-border-radius-topright: 6px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      font-weight: normal;
+
+      &.active{
+        background: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  #welcome-banner{
+    border-radius: 4px;
+    border: 1x solid #C1C9D3;
+    padding: 30px 10px 45px 450px;
+
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18);
+    max-height: 152px;
+  }
+
+  .box-menu{
+    padding:0px;
+    display: flex;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18);
+    a{
+      padding: 25px 25px 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      color: $blue;
+      height: 100px;
+      width:150px;
+      border-right:1px solid #EAEAEA;
+    }
+  }
+
+  table{
+    width: 100%;
+    border-collapse:collapse;
+
+    td{
+      padding: 15px 13px;
+      //border-bottom: 1px solid #DDDDDD;
+
+
+      &:first-child{
+        padding-left: 40px;
+      }
+      &:last-child{
+        text-align: right;
+        padding-right: 40px;
+      }
+    }
+
+    thead td{
+      font-weight: bold;
+      background: #fff;
+    }
+  }
+
+  tr{
+    padding: 0px 15px;
+
+    &:last-child{
+      td{
+        border-bottom: 0px;
+      }
+    }
+  }
+
+  &.striped{
+    tr:nth-child(odd) {
+      background: #F1F2F6
+    }
+  }
+
+  #job-postings{
+    padding: 10px 0px;
+  }
+
+  #callout-boxes{
+    h3{
+      margin-top:0px;
+      font-size:1.2em;
+    }
+
+
+
+
+    .box{
+      height: 170px;
+    }
+  }
+
+  #customize-tab{
+    input[type='text'],select{
+      width: 60%;
+    }
+  }
+
+  #my-job-board-tab{
+    tr td{
+      padding-bottom: 60px;
+
+    }
+
+    thead td{
+      padding-bottom: 15px;
+    }
+  }
+
+
+}
+
+.recruitology-widget{
+  table td:first-child,table th:first-child{
+    padding-left: 10px;
+  }
+  
+  .arrow{
+    position: static !important;
+    &:after{
+      display: none !important;
+      background-color: none !important;
+      opacity: 0;
+      box-shadow: none !important;
+      z-index: -10;
+    }
+  }
+}
+
+#rc-footer{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li{
+    margin:0px 8px;
+    border-right: 1px solid #434343;
+    padding-right: 14px;
+    &:last-child{
+      border-right: none;
+    }
+
+    a{
+      text-decoration: none;
+    }
+  }
+}
